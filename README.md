@@ -7,7 +7,7 @@ This guideline will help you get started quickly with Python language.
 
 ### This guideline has a specific folders for working with each data types
 > This course contains the following themes:
-- [_Strings_]("pythonCourseForBeginners/strings/README.md")
+- [_Strings_]("https://github.com/philip136/pythonCourseForBeginners/blob/development/strings/README.md")
 - **Digits**
 - **Conditional statements**
 - **Loops**
