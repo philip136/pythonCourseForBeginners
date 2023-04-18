@@ -1,0 +1,7 @@
+[
+  {"name": "Bob", "age": 30, "permissions": [{"role": "owner"}]},
+  {"name":  "Tom", "age": 17, "permissions": [{"role": "member"}]},
+  {"name": "John", "age": 50, "permissions": [{"role": "admin"}]},
+  {"name": "Alexey", "age": 15, "permissions": [{"role": "member"}]},
+  {"name":  "Jerry", "age": 23, "permissions": [{"role": "member"}]}
+]

@@ -7,18 +7,13 @@ This guideline will help you get started quickly with Python language.
 
 ### _This guideline has a specific folders for working with each data types_
 > This course contains the following themes:
-- [_Strings_](https://github.com/philip136/pythonCourseForBeginners/blob/development/strings/README.md)
-- [_Digits_]()
-- [_Conditional statements_]()
-- [_Loops_]()
-- [_Lists_]()
-- [_Tuples_]()
-- [_Sets_]()
-- [_Dictionaries_]()
-- [_Functions_]()
-- [_Exceptions_]()
-- [_Classes_]()
-- [_Magic methods_]()
+- [_Strings_](https://github.com/philip136/pythonCourseForBeginners/blob/development/strings/strings.md)
+- [_Conditional statements_](https://github.com/philip136/pythonCourseForBeginners/blob/development/conditional_statements/conditional_statements.md)
+- [_Collections_](https://github.com/philip136/pythonCourseForBeginners/blob/development/collections/collections.md)
+- [_Loops_](https://github.com/philip136/pythonCourseForBeginners/blob/development/loops/loops.md)
+- [_Functions_](https://github.com/philip136/pythonCourseForBeginners/blob/development/functions/functions.md)
+- [_Classes_](https://github.com/philip136/pythonCourseForBeginners/blob/development/classes/classes.md)
+- [_Exceptions_](https://github.com/philip136/pythonCourseForBeginners/blob/development/exceptions/exceptions.md)
 - [_Modules_]()
 - [_Decorators_]()
 
