@@ -14,8 +14,7 @@ This guideline will help you get started quickly with Python language.
 - [_Functions_](https://github.com/philip136/pythonCourseForBeginners/blob/development/functions/functions.md)
 - [_Classes_](https://github.com/philip136/pythonCourseForBeginners/blob/development/classes/classes.md)
 - [_Exceptions_](https://github.com/philip136/pythonCourseForBeginners/blob/development/exceptions/exceptions.md)
-- [_Modules_]()
-- [_Decorators_]()
+- [_Modules_](https://github.com/philip136/pythonCourseForBeginners/blob/development/modules/modules.md)
 
 > Also this course contains additional useful information such as:
 - **Most used modules in projects.**

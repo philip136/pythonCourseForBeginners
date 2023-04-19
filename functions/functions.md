@@ -39,3 +39,39 @@ some_func(name="John", age=26)
 # Key `name` has value `John`
 # Key `age` has value `26`
 ```
+## Decorators
+When we type the characters `()` for a function, we call the magic method `__call__`  and after that function will be called:
+```python
+def hello_world():
+    print("Hello world")
+
+link_to_hello_world = hello_world  # <function hello_world at 0x0000021824786280>
+link_to_hello_world()  # 'Hello world'
+```
+But we also have the opportunity to call and create a function inside another function
+```python
+import time
+import requests
+
+def benchmark(func):
+    # Func is a link to `fetch_webpage` function
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        return_value = func(*args, **kwargs)  # The result of executing the `fetch_webpage` function
+        end = time.time()
+        print(f"Execution time: {end-start} seconds")
+        return return_value
+    return wrapper
+
+@benchmark
+def fetch_webpage(url):
+    webpage = requests.get(url)
+    return webpage.text
+
+webpage_content = fetch_webpage('https://google.com')
+print(webpage_content)
+
+# ---------------- Result ----------------
+# Execution time: 1.4475083351135254 seconds
+# <!doctype html><html itemscope="" itemtype="http://schema.org/WebPage".......
+```

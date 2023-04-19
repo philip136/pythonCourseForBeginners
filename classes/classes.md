@@ -30,7 +30,29 @@ class Student(Person):
 ```
 ## Multiple Inheritance
 ```python
-# Find a good example
+class Person:
+    @staticmethod
+    def say_hello():
+        return "Person said hello"
+
+    
+class Father(Person):
+    @staticmethod
+    def say_hello():
+        return "Father said hello"
+
+    
+class Mother(Person):
+    @staticmethod
+    def say_hello():
+        return "Mother said hello"
+
+    
+class Children(Father, Mother):
+    pass
+
+children = Children()
+print(children.say_hello()) # "Father said hello"
 ```
 
 All methods that start and end with a double underscore `__` have a specific name `magic methods`.
@@ -57,3 +79,4 @@ person2 = Person("John", 193)  # Person object John (because we overriden __repr
 print(person1) # Person John (because we overriden __str__ method)
 print(person1 == person2) # True, because we compare by name (we overriden __eq__ method)
 ```
+Additional information about magic methods you can see [here](https://www.tutorialsteacher.com/python/magic-methods-in-python?utm_content=cmp-true)
