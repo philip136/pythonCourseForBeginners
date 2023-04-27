@@ -111,6 +111,10 @@ In the example above, the magic method is the method `__init__` it's a construct
 The most useful magic methods:
 ```python
 class Person:
+    def __new__(cls, *args, **kwargs):
+        print("Creating a Person instance")
+        return super(Person, cls).__new__(cls, *args, **kwargs)
+    
     def __init__(self, name, height):
         self.name = name
         self.height = height
@@ -131,3 +135,5 @@ print(person1) # Person John (because we overriden __str__ method)
 print(person1 == person2) # True, because we compare by name (we overriden __eq__ method)
 ```
 Additional information about magic methods you can see [here](https://www.tutorialsteacher.com/python/magic-methods-in-python?utm_content=cmp-true)
+
+Homework after reading [here](https://github.com/philip136/pythonCourseForBeginners/blob/development/classes/homework.md)

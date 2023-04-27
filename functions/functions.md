@@ -75,3 +75,4 @@ print(webpage_content)
 # Execution time: 1.4475083351135254 seconds
 # <!doctype html><html itemscope="" itemtype="http://schema.org/WebPage".......
 ```
+Homework after reading [here](https://github.com/philip136/pythonCourseForBeginners/blob/development/functions/homework.md)

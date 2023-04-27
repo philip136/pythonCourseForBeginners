@@ -18,4 +18,3 @@ This guideline will help you get started quickly with Python language.
 
 > Also this course contains additional useful information such as:
 - **Most used modules in projects.**
-- **Homework after each theme.**

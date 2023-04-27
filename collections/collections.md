@@ -55,3 +55,5 @@ fruit_tuple = ("apple", "banana", "cherry")
 fruit_tuple[0] = "watermelon"  # TypeError: 'tuple' object does not support item assignment
 ```
 Additional methods for working with tuples you can see [here](https://www.w3schools.com/python/python_ref_tuple.asp)
+
+Homework after reading [here](https://github.com/philip136/pythonCourseForBeginners/blob/development/collections/homework.md)
