@@ -34,6 +34,8 @@ fruit_set = {"apple", "banana", "cherry"}
 fruit_set.add("apple")
 print(fruit_set)  # {"apple", "banana", "cherry"}
 ```
+`Conclusion`: If you want to get a collection without duplicates you should use set.
+
 Additional methods for working with sets you can see [here](https://www.w3schools.com/python/python_ref_set.asp)
 
 
@@ -54,6 +56,14 @@ Same as this list, but without the ability to change or add value
 fruit_tuple = ("apple", "banana", "cherry")
 fruit_tuple[0] = "watermelon"  # TypeError: 'tuple' object does not support item assignment
 ```
+Tuples are faster than list, let's check it.
+```commandline
+python -m timeit "x=(1,2,3,4,5,6,7,8)" # 50000000 loops, best of 5: 10.1 nsec per loop
+python -m timeit "x=[1,2,3,4,5,6,7,8]" # 5000000 loops, best of 5: 46.5 nsec per loop
+```
+`Conclusion`: If you are working with big data and this data does not need to be changed, then it is better to use a tuple.
+
+
 Additional methods for working with tuples you can see [here](https://www.w3schools.com/python/python_ref_tuple.asp)
 
 Homework after reading [here](https://github.com/philip136/pythonCourseForBeginners/blob/development/collections/homework.md)
