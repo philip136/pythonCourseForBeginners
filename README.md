@@ -17,4 +17,4 @@ This guideline will help you get started quickly with Python language.
 - [_Modules_](https://github.com/philip136/pythonCourseForBeginners/blob/development/modules/modules.md)
 
 > Also this course contains additional useful information such as:
-- **Most used modules in projects.**
+- [_Pytest_](https://github.com/philip136/pythonCourseForBeginners/blob/development/pytest/installation.md)
