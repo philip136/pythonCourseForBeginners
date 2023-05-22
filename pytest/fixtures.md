@@ -122,3 +122,45 @@ def test_get_users(database):
     ... 
 ```
 In this case, the database will be closed after all the tests that were run with pytest have run.
+### Autouse fixtures
+```python
+import pytest
+import time
+
+@pytest.fixture(autouse = True, scope="module")
+def fix_module():
+    answer = 42
+    print(f"Module setup {answer}")
+    yield
+    print(f"Module teardown {answer}")
+
+
+@pytest.fixture(autouse = True, scope="function")
+def fix_function():
+    start = time.time()
+    print(f"  Function setup {start}")
+    yield
+    print(f"  Function teardown {start}")
+
+
+def test_one():
+    print("    Test one")
+    assert True
+    print("    Test one - 2nd part")
+
+def test_two():
+    print("    Test two")
+    assert False
+    print("    Test two - 2nd part")
+
+# --------- Result ---------
+Module setup 42
+  Function setup 1612427609.9726396
+    Test one
+    Test one - 2nd part
+  Function teardown 1612427609.9726396
+  Function setup 1612427609.9741583
+    Test two
+  Function teardown 1612427609.9741583
+Module teardown 42
+```
