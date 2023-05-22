@@ -15,6 +15,7 @@ This guideline will help you get started quickly with Python language.
 - [_Classes_](https://github.com/philip136/pythonCourseForBeginners/blob/development/classes/classes.md)
 - [_Exceptions_](https://github.com/philip136/pythonCourseForBeginners/blob/development/exceptions/exceptions.md)
 - [_Modules_](https://github.com/philip136/pythonCourseForBeginners/blob/development/modules/modules.md)
+- [_Keywords_](https://github.com/philip136/pythonCourseForBeginners/blob/development/keywords/keywords.md)
 
 > Also this course contains additional useful information such as:
 - [_Pytest_](https://github.com/philip136/pythonCourseForBeginners/blob/development/pytest/installation.md)

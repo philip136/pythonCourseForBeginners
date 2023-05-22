@@ -19,3 +19,28 @@ class MyException(BaseException):
 raise MyException() # __main__.MyException: It's my exception
 ```
 The keyword `raise` is the same as `throw` in Java for example.
+
+To except more than one exception we can use two options:
+```python
+def func_to_divide(val):
+    try:
+        return 1 / val
+    except (ZeroDivisionError, TypeError) as err:
+        print(str(err))
+
+func_to_divide(0) # division by zero
+func_to_divide("1") # unsupported operand type(s) for /: 'int' and 'str'
+```
+OR
+```python
+def func_to_divide(val):
+    try:
+        return 1 / val
+    except ZeroDivisionError as err:
+        print(str(err))
+    except TypeError as err:
+        print(str(err))
+
+func_to_divide(0) # division by zero
+func_to_divide("1") # unsupported operand type(s) for /: 'int' and 'str'
+```
